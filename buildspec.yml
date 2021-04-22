@@ -17,11 +17,12 @@ phases:
       - npm install
   build:
     commands:
-      # - echo testing...
-      # - echo building...
+      - echo testing...
+      - echo building...
       - ng build --prod
+      - ls -lh
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/your-app-name
+  base-directory: dist/first-app
